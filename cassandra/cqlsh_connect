@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+ 
+PW=`cat $HOME/cassandra/password`
+cqlsh --cqlversion=3.0.0 -k ecdb -u mrc -p $PW 10.1.1.2
